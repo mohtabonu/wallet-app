@@ -1,8 +1,8 @@
 
 
 const currentTime = new Date();
-export const hours = currentTime.getHours(); 
-export const minutes = currentTime.getMinutes(); 
+export const hours = currentTime.getHours().toString().padStart(2, '0'); 
+export const minutes = currentTime.getMinutes().toString().padStart(2, '0'); 
 const months = [
   "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
 ];
