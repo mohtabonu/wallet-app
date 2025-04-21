@@ -1,7 +1,9 @@
 import { hours, minutes, day, month, year } from "./time";
 import {
     timeElements, dateElements, wayToRegister, wayToLogin, registerPage, loginPage, registerForm, loginForm, accountBtns, homePage, accountPage,
-    myCardBtns, myCardPage, homeBtns, logOut
+    myCardBtns, myCardPage, homeBtns, logOut,
+    notificationBtns,
+    notificationPage
 } from "./elements";
 import { registered } from './register'
 import { logIned } from "./login";
@@ -35,7 +37,7 @@ registerForm.addEventListener('submit', (e) => {
     registered(form)
 })
 
-loginForm.addEventListener('submit', (e)=>{
+loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const form = e.target as HTMLFormElement
     logIned(form);
@@ -43,17 +45,20 @@ loginForm.addEventListener('submit', (e)=>{
 
 homeBtns.forEach(homeBtn => {
     homeBtn.addEventListener('click', () => {
-    accountPage.classList.add('my-hidden')
-    accountPage.classList.remove('my-visible')
+        accountPage.classList.add('my-hidden')
+        accountPage.classList.remove('my-visible')
 
-    myCardPage.classList.add('my-hidden')
-    myCardPage.classList.remove('my-visible')
+        myCardPage.classList.add('my-hidden')
+        myCardPage.classList.remove('my-visible')
 
-    homePage.classList.add('my-visible');
-    homePage.classList.remove('my-hidden')
+        homePage.classList.add('my-visible');
+        homePage.classList.remove('my-hidden')
 
-    console.log('clicked')
-})
+        notificationPage.classList.add('my-hidden')
+        notificationPage.classList.remove('my-visible')
+
+        console.log('clicked')
+    })
 });
 
 
@@ -73,19 +78,19 @@ accountBtns.forEach(accountBtn => {
 
 myCardBtns.forEach(myCardBtn => {
     myCardBtn.addEventListener('click', () => {
-    homePage.classList.add('my-hidden')
-    homePage.classList.remove('my-visible')
+        homePage.classList.add('my-hidden')
+        homePage.classList.remove('my-visible')
 
-    accountPage.classList.add('my-hidden')
-    accountPage.classList.remove('my-visible')
+        accountPage.classList.add('my-hidden')
+        accountPage.classList.remove('my-visible')
 
-    myCardPage.classList.remove('my-hidden');
-    myCardPage.classList.add('my-visible')
-})
+        myCardPage.classList.remove('my-hidden');
+        myCardPage.classList.add('my-visible')
+    })
 });
 
 
-logOut.addEventListener('click', ()=>{
+logOut.addEventListener('click', () => {
     homePage.classList.add('my-hidden')
     homePage.classList.remove('my-visible')
 
@@ -99,4 +104,21 @@ logOut.addEventListener('click', ()=>{
     loginPage.classList.remove('my-hidden')
 })
 
+notificationBtns.forEach(notificationBtn => {
 
+    notificationBtn.addEventListener('click', () => {
+        homePage.classList.add('my-hidden')
+        homePage.classList.remove('my-visible')
+
+        accountPage.classList.add('my-hidden')
+        accountPage.classList.remove('my-visible')
+
+        myCardPage.classList.add('my-hidden')
+        myCardPage.classList.remove('my-visible')
+
+        notificationPage.classList.remove('my-hidden')
+        notificationPage.classList.add('my-visible')
+    })
+
+
+})

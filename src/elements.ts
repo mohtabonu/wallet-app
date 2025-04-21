@@ -16,3 +16,5 @@ export const myCardPage: HTMLDivElement = document.querySelector('#my-card')!;
 export const userPassword: HTMLParagraphElement = document.querySelector('.userPassword')!;
 export const userNumber: HTMLParagraphElement = document.querySelector('.userNumber')!;
 export const logOut: HTMLButtonElement = document.querySelector('#logOut')!;
+export const notificationBtns: NodeListOf<HTMLElement> = document.querySelectorAll('.notificationBtn')!;
+export const notificationPage: HTMLDivElement = document.querySelector('#notifications')!;

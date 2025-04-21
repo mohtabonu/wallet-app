@@ -4,7 +4,13 @@ class User{
     constructor(public username:string, public phoneNumber:number, public password:string){}
 }
 
-export let users: User[] = []
+export let users: User[] = [
+    {
+        username: 'admin',
+        phoneNumber: 998998745612,
+        password: 'bonu',
+    }
+]
 
 export function addUser(username:string,phone:number,password:string){
     let user = new User(username,phone,password)
