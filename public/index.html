@@ -14,7 +14,8 @@
 </head>
 
 <body class="h-screen flex justify-center items-center font-montserrat">
-  <div class="w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] p-5 me-4">
+  <!-- HOME PAGE -->
+  <div id="home-page" class="my-hidden w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] p-5 me-4">
     <!-- Header -->
     <header class="flex justify-between items-center">
       <p id="timer" class="timer text-[16px] font-medium">9:41</p>
@@ -332,170 +333,8 @@
     <!-- End Of Footer -->
   </div>
 
-  <div class="w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] me-4">
-    <!-- Header -->
-     <header class="bg-blue-900 px-5 pt-5 rounded-t-[25px]">
-       <div class="flex justify-between items-center">
-         <p class="timer text-[16px] font-medium text-[#FFFFFF]">9:41</p>
-         <div class="flex gap-2">
-           <div id="connection">
-             <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path fill-rule="evenodd" clip-rule="evenodd"
-                 d="M16.6667 0.666666H15.6667C15.1144 0.666666 14.6667 1.11438 14.6667 1.66667V10.3333C14.6667 10.8856 15.1144 11.3333 15.6667 11.3333H16.6667C17.2189 11.3333 17.6667 10.8856 17.6667 10.3333V1.66667C17.6667 1.11438 17.2189 0.666666 16.6667 0.666666ZM11 3H12C12.5523 3 13 3.44771 13 4V10.3333C13 10.8856 12.5523 11.3333 12 11.3333H11C10.4477 11.3333 9.99999 10.8856 9.99999 10.3333V4C9.99999 3.44771 10.4477 3 11 3ZM7.33332 5.33333H6.33332C5.78104 5.33333 5.33332 5.78105 5.33332 6.33333V10.3333C5.33332 10.8856 5.78104 11.3333 6.33332 11.3333H7.33332C7.88561 11.3333 8.33332 10.8856 8.33332 10.3333V6.33333C8.33332 5.78105 7.88561 5.33333 7.33332 5.33333ZM2.66666 7.33333H1.66666C1.11437 7.33333 0.666656 7.78105 0.666656 8.33333V10.3333C0.666656 10.8856 1.11437 11.3333 1.66666 11.3333H2.66666C3.21894 11.3333 3.66666 10.8856 3.66666 10.3333V8.33333C3.66666 7.78105 3.21894 7.33333 2.66666 7.33333Z"
-                 fill="white" />
-             </svg>
-           </div>
-           <div id="wifi">
-             <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path fill-rule="evenodd" clip-rule="evenodd"
-                 d="M8.33033 2.608C10.5462 2.6081 12.6774 3.45954 14.2833 4.98633C14.4043 5.10421 14.5976 5.10272 14.7167 4.983L15.8727 3.81633C15.933 3.75561 15.9666 3.67336 15.9661 3.58778C15.9656 3.5022 15.931 3.42035 15.87 3.36033C11.6549 -0.679214 5.0051 -0.679214 0.789998 3.36033C0.728939 3.4203 0.694296 3.50213 0.693733 3.58771C0.69317 3.67329 0.726734 3.75557 0.786998 3.81633L1.94333 4.983C2.06236 5.1029 2.25581 5.10439 2.37666 4.98633C3.98282 3.45943 6.11422 2.60799 8.33033 2.608ZM8.33033 6.40367C9.54782 6.40359 10.7219 6.85612 11.6243 7.67333C11.7464 7.78931 11.9387 7.7868 12.0577 7.66767L13.2123 6.501C13.2731 6.43981 13.3069 6.35679 13.306 6.27052C13.3051 6.18426 13.2697 6.10195 13.2077 6.042C10.4595 3.48562 6.20353 3.48562 3.45533 6.042C3.39325 6.10195 3.35784 6.1843 3.35702 6.27059C3.35621 6.35689 3.39006 6.43989 3.451 6.501L4.60533 7.66767C4.72432 7.7868 4.9166 7.78931 5.03866 7.67333C5.94054 6.85666 7.11365 6.40417 8.33033 6.40367ZM10.6433 8.95749C10.6451 9.04399 10.6111 9.12739 10.5493 9.188L8.552 11.2037C8.49345 11.2629 8.41362 11.2962 8.33033 11.2962C8.24704 11.2962 8.16722 11.2629 8.10866 11.2037L6.111 9.188C6.04929 9.12735 6.01534 9.04392 6.01717 8.95741C6.019 8.87091 6.05644 8.78899 6.12067 8.731C7.39624 7.65212 9.26443 7.65212 10.54 8.731C10.6042 8.78903 10.6416 8.87098 10.6433 8.95749Z"
-                 fill="white" />
-             </svg>
-           </div>
-           <div id="battery">
-             <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <rect opacity="0.35" x="0.5" y="0.833334" width="21" height="10.3333" rx="2.16667" stroke="white" />
-               <path opacity="0.4" d="M23 4V8C23.8047 7.66122 24.328 6.87313 24.328 6C24.328 5.12687 23.8047 4.33878 23 4"
-                 fill="white" />
-               <rect x="2" y="2.33333" width="18" height="7.33333" rx="1.33333" fill="white" />
-             </svg>
-           </div>
-         </div>
-       </div>
-       <div class="py-[18px]">
-         <div class="flex items-center justify-between">
-           <p class="text-[18px] text-[#FFFFFF] font-semibold">In & Out</p>
-           <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-             <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-           </svg>
-             
-         </div>
-         <div class="flex items-center justify-between mt-[37px]">
-           <div>
-             <p class="text-[14px] text-[#FFFFFF]">Active Total Balance</p>
-             <h1 class="text-[32px] text-[#FFFFFF]">$8,420.00</h1>
-           </div>
-           <div class="cursor-pointer">
-             <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <rect opacity="0.15" width="42" height="42" rx="8" fill="white"/>
-               <path d="M28.0312 20H22V13.9688C22 13.4187 21.55 12.9688 21 12.9688C20.45 12.9688 20 13.4187 20 13.9688V20H13.9688C13.4187 20 12.9688 20.45 12.9688 21C12.9688 21.275 13.0812 21.525 13.2625 21.7062C13.4437 21.8875 13.6938 22 13.9688 22H20V28.0312C20 28.3062 20.1125 28.5562 20.2937 28.7375C20.475 28.9187 20.725 29.0312 21 29.0312C21.55 29.0312 22 28.5813 22 28.0312V22H28.0312C28.5813 22 29.0312 21.55 29.0312 21C29.0312 20.45 28.5813 20 28.0312 20Z" fill="white"/>
-             </svg>    
-           </div>
-         </div>
-         <div class="border-t border-t-1 border-[#FFFFFF] border-opacity-[15%] flex  items-center gap-[12px] pt-[16px] mt-[12px]">
-           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-             <rect opacity="0.1" width="28" height="28" rx="6" fill="white"/>
-             <path d="M17.966 12.2984C17.7512 12.5176 17.3945 12.5176 17.1754 12.3027L14.5586 9.69454V19.6332C14.5586 19.9383 14.3094 20.1875 14 20.1875C13.6906 20.1875 13.4414 19.9383 13.4414 19.6332V9.69454L10.8246 12.307C10.6055 12.5219 10.2531 12.5176 10.034 12.3027C9.81914 12.0836 9.81914 11.7356 10.0383 11.5164L13.6047 7.97579C13.6562 7.92852 13.7121 7.88985 13.7809 7.85977C13.8496 7.82969 13.9227 7.8168 13.9957 7.8168C14.1418 7.8168 14.2793 7.87266 14.3867 7.97579L17.9531 11.5164C18.1766 11.727 18.1809 12.0793 17.966 12.2984Z" fill="white"/>
-           </svg>
-           <p class="text-[14px] text-white">Up by 4% from last month</p>
-         </div>
-       </div>
-     </header>
-     <!-- End Of Header -->
-
-     <div class="p-5">
-      <div class="flex justify-between mt-[10px] mb-3">
-        <div class="flex items-center gap-[16px]">
-          <p class="text-[15px] text-blue-900 font-semibold">Expenses</p>
-          <p class="text-[15px]">Earnings</p>
-        </div>
-        <div>
-          <p class="text-[15px] text-[#222222] font-semibold cursor-pointer">Sort by</p>
-        </div>
-      </div>
-      <div class="flex flex-col gap-[0.8px] bg-gray-400 border-none">
-        <div class="p-2 flex justify-between bg-white">
-          <div>
-            <h3 class="text-[16px]">Dropbox Plan</h3>
-            <p class="text-gray-500 text-[14px]">Subscription</p>
-          </div>
-          <div class="text-end">
-            <h3 class="text-[16px] text-red-500">
-              -$144.00
-            </h3>
-            <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
-          </div>
-        </div>
-        <div class="p-2 flex justify-between bg-white">
-          <div>
-            <h3 class="text-[16px]">Dropbox Plan</h3>
-            <p class="text-gray-500 text-[14px]">Subscription</p>
-          </div>
-          <div class="text-end">
-            <h3 class="text-[16px] text-red-500">
-              -$144.00
-            </h3>
-            <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
-          </div>
-        </div>
-        <div class="p-2 flex justify-between bg-white">
-          <div>
-            <h3 class="text-[16px]">Dropbox Plan</h3>
-            <p class="text-gray-500 text-[14px]">Subscription</p>
-          </div>
-          <div class="text-end">
-            <h3 class="text-[16px] text-red-500">
-              -$144.00
-            </h3>
-            <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
-          </div>
-        </div>
-        <div class="p-2 flex justify-between bg-white">
-          <div>
-            <h3 class="text-[16px]">Dropbox Plan</h3>
-            <p class="text-gray-500 text-[14px]">Subscription</p>
-          </div>
-          <div class="text-end">
-            <h3 class="text-[16px] text-red-500">
-              -$144.00
-            </h3>
-            <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Footer -->
-   <footer>
-      <div class="flex justify-between p-5 border-t mt-2">
-        <div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12.514 3.47698C12.153 3.19639 11.6477 3.19639 11.2866 3.47698L4.13632 9.03458C3.89258 9.22403 3.75 9.51543 3.75 9.82413V20C3.75 20.5523 4.19772 21 4.75 21H8.35744C8.90972 21 9.35744 20.5523 9.35744 20V14.9581C9.35744 14.4058 9.80515 13.9581 10.3574 13.9581H13.4432C13.9955 13.9581 14.4432 14.4058 14.4432 14.9581V20C14.4432 20.5523 14.891 21 15.4432 21H19.0507C19.603 21 20.0507 20.5523 20.0507 20V9.82413C20.0507 9.51543 19.9081 9.22403 19.6643 9.03458L12.514 3.47698Z"
-              fill="#CBCBDD" />
-          </svg>
-        </div>
-        <div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.25 4.5C8.25 3.67157 8.92157 3 9.75 3C10.5784 3 11.25 3.67157 11.25 4.5V19.5C11.25 20.3284 10.5784 21 9.75 21C8.92157 21 8.25 20.3284 8.25 19.5V4.5Z" fill="#031A6E"/>
-            <path d="M3.75 17.25C3.75 16.4216 4.42157 15.75 5.25 15.75C6.07843 15.75 6.75 16.4216 6.75 17.25V19.5C6.75 20.3284 6.07843 21 5.25 21C4.42157 21 3.75 20.3284 3.75 19.5V17.25Z" fill="#031A6E"/>
-            <path d="M12.75 14.25C12.75 13.4216 13.4216 12.75 14.25 12.75C15.0784 12.75 15.75 13.4216 15.75 14.25V19.5C15.75 20.3284 15.0784 21 14.25 21C13.4216 21 12.75 20.3284 12.75 19.5V14.25Z" fill="#031A6E"/>
-            <path d="M17.25 9.75C17.25 8.92157 17.9216 8.25 18.75 8.25C19.5784 8.25 20.25 8.92157 20.25 9.75V19.5C20.25 20.3284 19.5784 21 18.75 21C17.9216 21 17.25 20.3284 17.25 19.5V9.75Z" fill="#031A6E"/>
-          </svg>            
-        </div>
-        <div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.5 6C22.5 5.175 21.825 4.5 21 4.5H3C2.175 4.5 1.5 5.175 1.5 6V8.25H22.5V6Z" fill="#CBCBDD" />
-            <path
-              d="M1.5 18C1.5 18.825 2.175 19.5 3 19.5H21C21.825 19.5 22.5 18.825 22.5 18V10.5H1.5V18ZM8.15625 15.75H15.8438C16.2047 15.75 16.5 16.0453 16.5 16.4062C16.5 16.7672 16.2047 17.0625 15.8438 17.0625H8.15625C7.79531 17.0625 7.5 16.7672 7.5 16.4062C7.5 16.0453 7.79531 15.75 8.15625 15.75ZM4.78125 15.75H5.34375C5.70469 15.75 6 16.0453 6 16.4062C6 16.7672 5.70469 17.0625 5.34375 17.0625H4.78125C4.42031 17.0625 4.125 16.7672 4.125 16.4062C4.125 16.0453 4.42031 15.75 4.78125 15.75Z"
-              fill="#CBCBDD" />
-          </svg>
-        </div>
-        <div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M12 12C14.4752 12 16.5 9.97495 16.5 7.5C16.5 5.02505 14.4752 3 12 3C9.52477 3 7.5 5.02505 7.5 7.5C7.5 9.97495 9.52477 12 12 12ZM12 14.25C9.01884 14.25 3 15.7688 3 18.75V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V18.75C21 15.7688 14.9812 14.25 12 14.25Z"
-              fill="#CBCBDD" />
-          </svg>
-        </div>
-      </div>
-    </footer> 
-    <!-- End Of Footer -->
-  </div>
-
-  <div class="w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] p-5">
-    <!-- Header -->
+  <!-- LOGIN PAGE -->
+  <div  id="login-page" class="my-block w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] p-5 me-4">
     <header class="flex justify-between items-center">
       <p id="timer" class="timer text-[16px] font-medium">9:41</p>
       <div class="flex gap-2">
@@ -523,102 +362,385 @@
         </div>
       </div>
     </header>
-    <!-- End Of Header -->
-    <div class="flex items-center gap-2 mt-4 mb-8 text-[18px] text-[#222222] font-semibold">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10.214 12L16.1719 6.04687C16.6125 5.60625 16.6125 4.89375 16.1719 4.45781C15.7312 4.01719 15.0187 4.02187 14.5781 4.45781L7.82811 11.2031C7.40154 11.6297 7.39217 12.3141 7.79529 12.7547L14.5734 19.5469C14.7937 19.7672 15.0844 19.875 15.3703 19.875C15.6562 19.875 15.9469 19.7672 16.1672 19.5469C16.6078 19.1062 16.6078 18.3937 16.1672 17.9578L10.214 12Z" fill="#222222"/>
-      </svg>
-      <p>Notifications</p>
-    </div>
+    
+    <!-- Login Form -->
+  <div class="flex flex-col h-full justify-center items-center">
     <div>
-      <p class="text-[14px] opacity-50 font-semibold text-[#222222]">Today</p>
-      <div>
-        <div class="flex items-center gap-3 border-b py-[17px]">
-          <div>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
-              <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
-              <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
-            <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-3 border-b py-[17px]">
-          <div>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
-              <path d="M25.9375 14.5H12.0625C10.5109 14.5 9.25 15.7609 9.25 17.3125V25.1875C9.25 26.7391 10.5109 28 12.0625 28H25.9375C27.4891 28 28.75 26.7391 28.75 25.1875V17.3125C28.75 15.7609 27.4891 14.5 25.9375 14.5Z" fill="#031A6E"/>
-              <path d="M23.0734 10.0469L12.0625 12.1984C11.2188 12.3859 10 13.2344 10 14.2656C10 14.2656 10.7031 13.375 12.2969 13.375H25.75V12.4141C25.75 11.8234 25.5156 11.0688 25.0984 10.6516C24.5688 10.1219 23.8094 9.89219 23.0734 10.0469Z" fill="#031A6E"/>
-            </svg>      
-          </div>
-          <div>
-            <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
-            <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-3 py-[17px]">
-          <div>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
-              <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
-              <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
-            <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
-          </div>
-        </div>    
+      <h1 class="text-2xl font-semibold text-center text-blue-900 mb-6">Login</h1>
+      <div class="space-y-4">
+        <input
+          type="text"
+          placeholder="Username"
+          class="w-full px-4 py-3 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full px-4 py-3 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+        />
+        <button
+          class="w-full bg-blue-900 text-white py-3 rounded-lg font-medium hover:bg-blue-700"
+        >
+          Login
+        </button>
       </div>
     </div>
-    <div class="mt-6">
-      <p class="text-[14px] opacity-50 font-semibold text-[#222222]">Yesterday</p>
+
+    <p class="text-center text-sm text-gray-600 mt-4 mb-12">
+      No account?
+      <span onclick="goToRegister()" class="text-blue-900 font-semibold cursor-pointer hover:underline">Register</span>
+    </p>
+  </div>
+  </div>
+  <!-- REGISTER PAGE -->
+  <div id="register-page" class="my-hidden w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] p-5 me-4">
+  <header class="flex justify-between items-center">
+    <p id="timer" class="timer text-[16px] font-medium">9:41</p>
+    <div class="flex gap-2">
+      <div id="connection">
+        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.6667 0.666666H15.6667C15.1144 0.666666 14.6667 1.11438 14.6667 1.66667V10.3333C14.6667 10.8856 15.1144 11.3333 15.6667 11.3333H16.6667C17.2189 11.3333 17.6667 10.8856 17.6667 10.3333V1.66667C17.6667 1.11438 17.2189 0.666666 16.6667 0.666666ZM11 3H12C12.5523 3 13 3.44771 13 4V10.3333C13 10.8856 12.5523 11.3333 12 11.3333H11C10.4477 11.3333 9.99999 10.8856 9.99999 10.3333V4C9.99999 3.44771 10.4477 3 11 3ZM7.33332 5.33333H6.33332C5.78104 5.33333 5.33332 5.78105 5.33332 6.33333V10.3333C5.33332 10.8856 5.78104 11.3333 6.33332 11.3333H7.33332C7.88561 11.3333 8.33332 10.8856 8.33332 10.3333V6.33333C8.33332 5.78105 7.88561 5.33333 7.33332 5.33333ZM2.66666 7.33333H1.66666C1.11437 7.33333 0.666656 7.78105 0.666656 8.33333V10.3333C0.666656 10.8856 1.11437 11.3333 1.66666 11.3333H2.66666C3.21894 11.3333 3.66666 10.8856 3.66666 10.3333V8.33333C3.66666 7.78105 3.21894 7.33333 2.66666 7.33333Z"
+            fill="black" />
+        </svg>
+      </div>
+      <div id="wifi">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.33033 2.608C10.5462 2.6081 12.6774 3.45954 14.2833 4.98633C14.4043 5.10421 14.5976 5.10272 14.7167 4.983L15.8727 3.81633C15.933 3.75561 15.9666 3.67336 15.9661 3.58778C15.9656 3.5022 15.931 3.42035 15.87 3.36033C11.6549 -0.679214 5.0051 -0.679214 0.789998 3.36033C0.728939 3.4203 0.694296 3.50213 0.693733 3.58771C0.69317 3.67329 0.726734 3.75557 0.786998 3.81633L1.94333 4.983C2.06236 5.1029 2.25581 5.10439 2.37666 4.98633C3.98282 3.45943 6.11422 2.60799 8.33033 2.608ZM8.33033 6.40367C9.54782 6.40359 10.7219 6.85612 11.6243 7.67333C11.7464 7.78931 11.9387 7.7868 12.0577 7.66767L13.2123 6.501C13.2731 6.43981 13.3069 6.35679 13.306 6.27052C13.3051 6.18426 13.2697 6.10195 13.2077 6.042C10.4595 3.48562 6.20353 3.48562 3.45533 6.042C3.39325 6.10195 3.35784 6.1843 3.35702 6.27059C3.35621 6.35689 3.39006 6.43989 3.451 6.501L4.60533 7.66767C4.72432 7.7868 4.9166 7.78931 5.03866 7.67333C5.94054 6.85666 7.11365 6.40417 8.33033 6.40367ZM10.6433 8.95749C10.6451 9.04399 10.6111 9.12739 10.5493 9.188L8.552 11.2037C8.49345 11.2629 8.41362 11.2962 8.33033 11.2962C8.24704 11.2962 8.16722 11.2629 8.10866 11.2037L6.111 9.188C6.04929 9.12735 6.01534 9.04392 6.01717 8.95741C6.019 8.87091 6.05644 8.78899 6.12067 8.731C7.39624 7.65212 9.26443 7.65212 10.54 8.731C10.6042 8.78903 10.6416 8.87098 10.6433 8.95749Z"
+            fill="black" />
+        </svg>
+      </div>
+      <div id="battery">
+        <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect opacity="0.35" x="0.5" y="0.833334" width="21" height="10.3333" rx="2.16667" stroke="black" />
+          <path opacity="0.4" d="M23 4V8C23.8047 7.66122 24.328 6.87313 24.328 6C24.328 5.12687 23.8047 4.33878 23 4"
+            fill="black" />
+          <rect x="2" y="2.33333" width="18" height="7.33333" rx="1.33333" fill="black" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  
+  <div class="flex flex-col h-full justify-center items-center">
+    <div>
+      <h1 class="text-2xl font-semibold text-center text-blue-900 mb-6">Register</h1>
+      <div class="space-y-4">
+        <input
+          type="text"
+          placeholder="Username"
+          class="w-full px-4 py-3 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+        />
+        <input
+          type="tel"
+          placeholder="Phone number"
+          class="w-full px-4 py-3 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="w-full px-4 py-3 text-sm border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-900"
+        />
+        <button
+          class="w-full bg-blue-900 text-white py-3 rounded-lg font-medium hover:bg-blue-700"
+        >
+          Register
+        </button>
+      </div>
+    </div>
+  
+    <p class="text-center text-sm text-gray-600 mt-4 mb-[100px]">
+      Already have an account?
+      <span onclick="goToLogin()" class="text-blue-900 font-semibold cursor-pointer hover:underline">Login</span>
+    </p>
+  </div>
+  
+  </div>
+
+  <!-- MY CARD -->
+  <div id="my-card" class="my-hidden w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] me-4">
+   <header class="bg-blue-900 px-5 pt-5 rounded-t-[25px]">
+     <div class="flex justify-between items-center">
+       <p class="timer text-[16px] font-medium text-[#FFFFFF]">9:41</p>
+       <div class="flex gap-2">
+         <div id="connection">
+           <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M16.6667 0.666666H15.6667C15.1144 0.666666 14.6667 1.11438 14.6667 1.66667V10.3333C14.6667 10.8856 15.1144 11.3333 15.6667 11.3333H16.6667C17.2189 11.3333 17.6667 10.8856 17.6667 10.3333V1.66667C17.6667 1.11438 17.2189 0.666666 16.6667 0.666666ZM11 3H12C12.5523 3 13 3.44771 13 4V10.3333C13 10.8856 12.5523 11.3333 12 11.3333H11C10.4477 11.3333 9.99999 10.8856 9.99999 10.3333V4C9.99999 3.44771 10.4477 3 11 3ZM7.33332 5.33333H6.33332C5.78104 5.33333 5.33332 5.78105 5.33332 6.33333V10.3333C5.33332 10.8856 5.78104 11.3333 6.33332 11.3333H7.33332C7.88561 11.3333 8.33332 10.8856 8.33332 10.3333V6.33333C8.33332 5.78105 7.88561 5.33333 7.33332 5.33333ZM2.66666 7.33333H1.66666C1.11437 7.33333 0.666656 7.78105 0.666656 8.33333V10.3333C0.666656 10.8856 1.11437 11.3333 1.66666 11.3333H2.66666C3.21894 11.3333 3.66666 10.8856 3.66666 10.3333V8.33333C3.66666 7.78105 3.21894 7.33333 2.66666 7.33333Z"
+               fill="white" />
+           </svg>
+         </div>
+         <div id="wifi">
+           <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path fill-rule="evenodd" clip-rule="evenodd"
+               d="M8.33033 2.608C10.5462 2.6081 12.6774 3.45954 14.2833 4.98633C14.4043 5.10421 14.5976 5.10272 14.7167 4.983L15.8727 3.81633C15.933 3.75561 15.9666 3.67336 15.9661 3.58778C15.9656 3.5022 15.931 3.42035 15.87 3.36033C11.6549 -0.679214 5.0051 -0.679214 0.789998 3.36033C0.728939 3.4203 0.694296 3.50213 0.693733 3.58771C0.69317 3.67329 0.726734 3.75557 0.786998 3.81633L1.94333 4.983C2.06236 5.1029 2.25581 5.10439 2.37666 4.98633C3.98282 3.45943 6.11422 2.60799 8.33033 2.608ZM8.33033 6.40367C9.54782 6.40359 10.7219 6.85612 11.6243 7.67333C11.7464 7.78931 11.9387 7.7868 12.0577 7.66767L13.2123 6.501C13.2731 6.43981 13.3069 6.35679 13.306 6.27052C13.3051 6.18426 13.2697 6.10195 13.2077 6.042C10.4595 3.48562 6.20353 3.48562 3.45533 6.042C3.39325 6.10195 3.35784 6.1843 3.35702 6.27059C3.35621 6.35689 3.39006 6.43989 3.451 6.501L4.60533 7.66767C4.72432 7.7868 4.9166 7.78931 5.03866 7.67333C5.94054 6.85666 7.11365 6.40417 8.33033 6.40367ZM10.6433 8.95749C10.6451 9.04399 10.6111 9.12739 10.5493 9.188L8.552 11.2037C8.49345 11.2629 8.41362 11.2962 8.33033 11.2962C8.24704 11.2962 8.16722 11.2629 8.10866 11.2037L6.111 9.188C6.04929 9.12735 6.01534 9.04392 6.01717 8.95741C6.019 8.87091 6.05644 8.78899 6.12067 8.731C7.39624 7.65212 9.26443 7.65212 10.54 8.731C10.6042 8.78903 10.6416 8.87098 10.6433 8.95749Z"
+               fill="white" />
+           </svg>
+         </div>
+         <div id="battery">
+           <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <rect opacity="0.35" x="0.5" y="0.833334" width="21" height="10.3333" rx="2.16667" stroke="white" />
+             <path opacity="0.4" d="M23 4V8C23.8047 7.66122 24.328 6.87313 24.328 6C24.328 5.12687 23.8047 4.33878 23 4"
+               fill="white" />
+             <rect x="2" y="2.33333" width="18" height="7.33333" rx="1.33333" fill="white" />
+           </svg>
+         </div>
+       </div>
+     </div>
+     <div class="py-[18px]">
+       <div class="flex items-center justify-between">
+         <p class="text-[18px] text-[#FFFFFF] font-semibold">In & Out</p>
+         <svg class="cursor-pointer" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+           <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+         </svg>
+           
+       </div>
+       <div class="flex items-center justify-between mt-[37px]">
+         <div>
+           <p class="text-[14px] text-[#FFFFFF]">Active Total Balance</p>
+           <h1 class="text-[32px] text-[#FFFFFF]">$8,420.00</h1>
+         </div>
+         <div class="cursor-pointer">
+           <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <rect opacity="0.15" width="42" height="42" rx="8" fill="white"/>
+             <path d="M28.0312 20H22V13.9688C22 13.4187 21.55 12.9688 21 12.9688C20.45 12.9688 20 13.4187 20 13.9688V20H13.9688C13.4187 20 12.9688 20.45 12.9688 21C12.9688 21.275 13.0812 21.525 13.2625 21.7062C13.4437 21.8875 13.6938 22 13.9688 22H20V28.0312C20 28.3062 20.1125 28.5562 20.2937 28.7375C20.475 28.9187 20.725 29.0312 21 29.0312C21.55 29.0312 22 28.5813 22 28.0312V22H28.0312C28.5813 22 29.0312 21.55 29.0312 21C29.0312 20.45 28.5813 20 28.0312 20Z" fill="white"/>
+           </svg>    
+         </div>
+       </div>
+       <div class="border-t border-t-1 border-[#FFFFFF] border-opacity-[15%] flex  items-center gap-[12px] pt-[16px] mt-[12px]">
+         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <rect opacity="0.1" width="28" height="28" rx="6" fill="white"/>
+           <path d="M17.966 12.2984C17.7512 12.5176 17.3945 12.5176 17.1754 12.3027L14.5586 9.69454V19.6332C14.5586 19.9383 14.3094 20.1875 14 20.1875C13.6906 20.1875 13.4414 19.9383 13.4414 19.6332V9.69454L10.8246 12.307C10.6055 12.5219 10.2531 12.5176 10.034 12.3027C9.81914 12.0836 9.81914 11.7356 10.0383 11.5164L13.6047 7.97579C13.6562 7.92852 13.7121 7.88985 13.7809 7.85977C13.8496 7.82969 13.9227 7.8168 13.9957 7.8168C14.1418 7.8168 14.2793 7.87266 14.3867 7.97579L17.9531 11.5164C18.1766 11.727 18.1809 12.0793 17.966 12.2984Z" fill="white"/>
+         </svg>
+         <p class="text-[14px] text-white">Up by 4% from last month</p>
+       </div>
+     </div>
+   </header>
+
+   <div class="p-5">
+    <div class="flex justify-between mt-[10px] mb-3">
+      <div class="flex items-center gap-[16px]">
+        <p class="text-[15px] text-blue-900 font-semibold">Expenses</p>
+        <p class="text-[15px]">Earnings</p>
+      </div>
       <div>
-        <div class="flex items-center gap-3 border-b py-[17px]">
-          <div>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
-              <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
-              <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
-            <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
-          </div>
+        <p class="text-[15px] text-[#222222] font-semibold cursor-pointer">Sort by</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-[0.8px] bg-gray-400 border-none">
+      <div class="p-2 flex justify-between bg-white">
+        <div>
+          <h3 class="text-[16px]">Dropbox Plan</h3>
+          <p class="text-gray-500 text-[14px]">Subscription</p>
         </div>
-        <div class="flex items-center gap-3 border-b py-[17px]">
-          <div>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
-              <path d="M25.9375 14.5H12.0625C10.5109 14.5 9.25 15.7609 9.25 17.3125V25.1875C9.25 26.7391 10.5109 28 12.0625 28H25.9375C27.4891 28 28.75 26.7391 28.75 25.1875V17.3125C28.75 15.7609 27.4891 14.5 25.9375 14.5Z" fill="#031A6E"/>
-              <path d="M23.0734 10.0469L12.0625 12.1984C11.2188 12.3859 10 13.2344 10 14.2656C10 14.2656 10.7031 13.375 12.2969 13.375H25.75V12.4141C25.75 11.8234 25.5156 11.0688 25.0984 10.6516C24.5688 10.1219 23.8094 9.89219 23.0734 10.0469Z" fill="#031A6E"/>
-            </svg>          
-          </div>
-          <div>
-            <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
-            <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
-          </div>
+        <div class="text-end">
+          <h3 class="text-[16px] text-red-500">
+            -$144.00
+          </h3>
+          <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
         </div>
-        <div class="flex items-center gap-3 py-[17px]">
-          <div>
-            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
-              <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
-              <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
-            <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
-          </div>
-        </div>     
+      </div>
+      <div class="p-2 flex justify-between bg-white">
+        <div>
+          <h3 class="text-[16px]">Dropbox Plan</h3>
+          <p class="text-gray-500 text-[14px]">Subscription</p>
+        </div>
+        <div class="text-end">
+          <h3 class="text-[16px] text-red-500">
+            -$144.00
+          </h3>
+          <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
+        </div>
+      </div>
+      <div class="p-2 flex justify-between bg-white">
+        <div>
+          <h3 class="text-[16px]">Dropbox Plan</h3>
+          <p class="text-gray-500 text-[14px]">Subscription</p>
+        </div>
+        <div class="text-end">
+          <h3 class="text-[16px] text-red-500">
+            -$144.00
+          </h3>
+          <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
+        </div>
+      </div>
+      <div class="p-2 flex justify-between bg-white">
+        <div>
+          <h3 class="text-[16px]">Dropbox Plan</h3>
+          <p class="text-gray-500 text-[14px]">Subscription</p>
+        </div>
+        <div class="text-end">
+          <h3 class="text-[16px] text-red-500">
+            -$144.00
+          </h3>
+          <p class="text-gray-500 text-[14px]">18 Sept 2019</p>
+        </div>
       </div>
     </div>
   </div>
+  
+ <footer>
+    <div class="flex justify-between p-5 border-t mt-2">
+      <div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12.514 3.47698C12.153 3.19639 11.6477 3.19639 11.2866 3.47698L4.13632 9.03458C3.89258 9.22403 3.75 9.51543 3.75 9.82413V20C3.75 20.5523 4.19772 21 4.75 21H8.35744C8.90972 21 9.35744 20.5523 9.35744 20V14.9581C9.35744 14.4058 9.80515 13.9581 10.3574 13.9581H13.4432C13.9955 13.9581 14.4432 14.4058 14.4432 14.9581V20C14.4432 20.5523 14.891 21 15.4432 21H19.0507C19.603 21 20.0507 20.5523 20.0507 20V9.82413C20.0507 9.51543 19.9081 9.22403 19.6643 9.03458L12.514 3.47698Z"
+            fill="#CBCBDD" />
+        </svg>
+      </div>
+      <div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.25 4.5C8.25 3.67157 8.92157 3 9.75 3C10.5784 3 11.25 3.67157 11.25 4.5V19.5C11.25 20.3284 10.5784 21 9.75 21C8.92157 21 8.25 20.3284 8.25 19.5V4.5Z" fill="#031A6E"/>
+          <path d="M3.75 17.25C3.75 16.4216 4.42157 15.75 5.25 15.75C6.07843 15.75 6.75 16.4216 6.75 17.25V19.5C6.75 20.3284 6.07843 21 5.25 21C4.42157 21 3.75 20.3284 3.75 19.5V17.25Z" fill="#031A6E"/>
+          <path d="M12.75 14.25C12.75 13.4216 13.4216 12.75 14.25 12.75C15.0784 12.75 15.75 13.4216 15.75 14.25V19.5C15.75 20.3284 15.0784 21 14.25 21C13.4216 21 12.75 20.3284 12.75 19.5V14.25Z" fill="#031A6E"/>
+          <path d="M17.25 9.75C17.25 8.92157 17.9216 8.25 18.75 8.25C19.5784 8.25 20.25 8.92157 20.25 9.75V19.5C20.25 20.3284 19.5784 21 18.75 21C17.9216 21 17.25 20.3284 17.25 19.5V9.75Z" fill="#031A6E"/>
+        </svg>            
+      </div>
+      <div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.5 6C22.5 5.175 21.825 4.5 21 4.5H3C2.175 4.5 1.5 5.175 1.5 6V8.25H22.5V6Z" fill="#CBCBDD" />
+          <path
+            d="M1.5 18C1.5 18.825 2.175 19.5 3 19.5H21C21.825 19.5 22.5 18.825 22.5 18V10.5H1.5V18ZM8.15625 15.75H15.8438C16.2047 15.75 16.5 16.0453 16.5 16.4062C16.5 16.7672 16.2047 17.0625 15.8438 17.0625H8.15625C7.79531 17.0625 7.5 16.7672 7.5 16.4062C7.5 16.0453 7.79531 15.75 8.15625 15.75ZM4.78125 15.75H5.34375C5.70469 15.75 6 16.0453 6 16.4062C6 16.7672 5.70469 17.0625 5.34375 17.0625H4.78125C4.42031 17.0625 4.125 16.7672 4.125 16.4062C4.125 16.0453 4.42031 15.75 4.78125 15.75Z"
+            fill="#CBCBDD" />
+        </svg>
+      </div>
+      <div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 12C14.4752 12 16.5 9.97495 16.5 7.5C16.5 5.02505 14.4752 3 12 3C9.52477 3 7.5 5.02505 7.5 7.5C7.5 9.97495 9.52477 12 12 12ZM12 14.25C9.01884 14.25 3 15.7688 3 18.75V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V18.75C21 15.7688 14.9812 14.25 12 14.25Z"
+            fill="#CBCBDD" />
+        </svg>
+      </div>
+    </div>
+  </footer> 
+  </div>
+
+  <!-- NOTIFICATIONS -->
+  <div id="notifications" class="my-hidden w-[25%] h-[90%] border-2 border-gray-200 rounded-[25px] p-5">
+  <header class="flex justify-between items-center">
+    <p id="timer" class="timer text-[16px] font-medium">9:41</p>
+    <div class="flex gap-2">
+      <div id="connection">
+        <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M16.6667 0.666666H15.6667C15.1144 0.666666 14.6667 1.11438 14.6667 1.66667V10.3333C14.6667 10.8856 15.1144 11.3333 15.6667 11.3333H16.6667C17.2189 11.3333 17.6667 10.8856 17.6667 10.3333V1.66667C17.6667 1.11438 17.2189 0.666666 16.6667 0.666666ZM11 3H12C12.5523 3 13 3.44771 13 4V10.3333C13 10.8856 12.5523 11.3333 12 11.3333H11C10.4477 11.3333 9.99999 10.8856 9.99999 10.3333V4C9.99999 3.44771 10.4477 3 11 3ZM7.33332 5.33333H6.33332C5.78104 5.33333 5.33332 5.78105 5.33332 6.33333V10.3333C5.33332 10.8856 5.78104 11.3333 6.33332 11.3333H7.33332C7.88561 11.3333 8.33332 10.8856 8.33332 10.3333V6.33333C8.33332 5.78105 7.88561 5.33333 7.33332 5.33333ZM2.66666 7.33333H1.66666C1.11437 7.33333 0.666656 7.78105 0.666656 8.33333V10.3333C0.666656 10.8856 1.11437 11.3333 1.66666 11.3333H2.66666C3.21894 11.3333 3.66666 10.8856 3.66666 10.3333V8.33333C3.66666 7.78105 3.21894 7.33333 2.66666 7.33333Z"
+            fill="black" />
+        </svg>
+      </div>
+      <div id="wifi">
+        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.33033 2.608C10.5462 2.6081 12.6774 3.45954 14.2833 4.98633C14.4043 5.10421 14.5976 5.10272 14.7167 4.983L15.8727 3.81633C15.933 3.75561 15.9666 3.67336 15.9661 3.58778C15.9656 3.5022 15.931 3.42035 15.87 3.36033C11.6549 -0.679214 5.0051 -0.679214 0.789998 3.36033C0.728939 3.4203 0.694296 3.50213 0.693733 3.58771C0.69317 3.67329 0.726734 3.75557 0.786998 3.81633L1.94333 4.983C2.06236 5.1029 2.25581 5.10439 2.37666 4.98633C3.98282 3.45943 6.11422 2.60799 8.33033 2.608ZM8.33033 6.40367C9.54782 6.40359 10.7219 6.85612 11.6243 7.67333C11.7464 7.78931 11.9387 7.7868 12.0577 7.66767L13.2123 6.501C13.2731 6.43981 13.3069 6.35679 13.306 6.27052C13.3051 6.18426 13.2697 6.10195 13.2077 6.042C10.4595 3.48562 6.20353 3.48562 3.45533 6.042C3.39325 6.10195 3.35784 6.1843 3.35702 6.27059C3.35621 6.35689 3.39006 6.43989 3.451 6.501L4.60533 7.66767C4.72432 7.7868 4.9166 7.78931 5.03866 7.67333C5.94054 6.85666 7.11365 6.40417 8.33033 6.40367ZM10.6433 8.95749C10.6451 9.04399 10.6111 9.12739 10.5493 9.188L8.552 11.2037C8.49345 11.2629 8.41362 11.2962 8.33033 11.2962C8.24704 11.2962 8.16722 11.2629 8.10866 11.2037L6.111 9.188C6.04929 9.12735 6.01534 9.04392 6.01717 8.95741C6.019 8.87091 6.05644 8.78899 6.12067 8.731C7.39624 7.65212 9.26443 7.65212 10.54 8.731C10.6042 8.78903 10.6416 8.87098 10.6433 8.95749Z"
+            fill="black" />
+        </svg>
+      </div>
+      <div id="battery">
+        <svg width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect opacity="0.35" x="0.5" y="0.833334" width="21" height="10.3333" rx="2.16667" stroke="black" />
+          <path opacity="0.4" d="M23 4V8C23.8047 7.66122 24.328 6.87313 24.328 6C24.328 5.12687 23.8047 4.33878 23 4"
+            fill="black" />
+          <rect x="2" y="2.33333" width="18" height="7.33333" rx="1.33333" fill="black" />
+        </svg>
+      </div>
+    </div>
+  </header>
+  <div class="flex items-center gap-2 mt-4 mb-8 text-[18px] text-[#222222] font-semibold">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.214 12L16.1719 6.04687C16.6125 5.60625 16.6125 4.89375 16.1719 4.45781C15.7312 4.01719 15.0187 4.02187 14.5781 4.45781L7.82811 11.2031C7.40154 11.6297 7.39217 12.3141 7.79529 12.7547L14.5734 19.5469C14.7937 19.7672 15.0844 19.875 15.3703 19.875C15.6562 19.875 15.9469 19.7672 16.1672 19.5469C16.6078 19.1062 16.6078 18.3937 16.1672 17.9578L10.214 12Z" fill="#222222"/>
+    </svg>
+    <p>Notifications</p>
+  </div>
+  <div>
+    <p class="text-[14px] opacity-50 font-semibold text-[#222222]">Today</p>
+    <div>
+      <div class="flex items-center gap-3 border-b py-[17px]">
+        <div>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
+            <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
+            <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
+          <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border-b py-[17px]">
+        <div>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
+            <path d="M25.9375 14.5H12.0625C10.5109 14.5 9.25 15.7609 9.25 17.3125V25.1875C9.25 26.7391 10.5109 28 12.0625 28H25.9375C27.4891 28 28.75 26.7391 28.75 25.1875V17.3125C28.75 15.7609 27.4891 14.5 25.9375 14.5Z" fill="#031A6E"/>
+            <path d="M23.0734 10.0469L12.0625 12.1984C11.2188 12.3859 10 13.2344 10 14.2656C10 14.2656 10.7031 13.375 12.2969 13.375H25.75V12.4141C25.75 11.8234 25.5156 11.0688 25.0984 10.6516C24.5688 10.1219 23.8094 9.89219 23.0734 10.0469Z" fill="#031A6E"/>
+          </svg>      
+        </div>
+        <div>
+          <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
+          <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 py-[17px]">
+        <div>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
+            <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
+            <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
+          <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
+        </div>
+      </div>    
+    </div>
+  </div>
+  <div class="mt-6">
+    <p class="text-[14px] opacity-50 font-semibold text-[#222222]">Yesterday</p>
+    <div>
+      <div class="flex items-center gap-3 border-b py-[17px]">
+        <div>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
+            <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
+            <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
+          <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 border-b py-[17px]">
+        <div>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
+            <path d="M25.9375 14.5H12.0625C10.5109 14.5 9.25 15.7609 9.25 17.3125V25.1875C9.25 26.7391 10.5109 28 12.0625 28H25.9375C27.4891 28 28.75 26.7391 28.75 25.1875V17.3125C28.75 15.7609 27.4891 14.5 25.9375 14.5Z" fill="#031A6E"/>
+            <path d="M23.0734 10.0469L12.0625 12.1984C11.2188 12.3859 10 13.2344 10 14.2656C10 14.2656 10.7031 13.375 12.2969 13.375H25.75V12.4141C25.75 11.8234 25.5156 11.0688 25.0984 10.6516C24.5688 10.1219 23.8094 9.89219 23.0734 10.0469Z" fill="#031A6E"/>
+          </svg>          
+        </div>
+        <div>
+          <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
+          <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 py-[17px]">
+        <div>
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.1" width="38" height="38" rx="6" fill="#031A6E"/>
+            <path d="M25.2297 19.4828C24.9906 19.2484 24.9859 18.8594 25.225 18.6203L27.4375 16.375H16.8906C16.5531 16.375 16.2812 16.1031 16.2812 15.7656C16.2812 15.4281 16.5531 15.1563 16.8906 15.1563H27.4328L25.2203 12.9109C24.9859 12.6719 24.9859 12.2875 25.225 12.0484C25.4641 11.8141 25.8484 11.8141 26.0875 12.0531L29.3219 15.3344C29.3734 15.3906 29.4203 15.4516 29.4484 15.5266C29.4812 15.6016 29.4953 15.6813 29.4953 15.7609C29.4953 15.9203 29.4344 16.0703 29.3219 16.1875L26.0875 19.4688C25.8531 19.7125 25.4688 19.7172 25.2297 19.4828Z" fill="#031A6E"/>
+            <path d="M12.7703 25.9516C13.0094 25.7172 13.0141 25.3281 12.775 25.0891L10.5672 22.8437H21.1094C21.4469 22.8437 21.7188 22.5719 21.7188 22.2344C21.7188 21.8969 21.4469 21.625 21.1094 21.625H10.5672L12.7797 19.3797C13.0141 19.1406 13.0141 18.7562 12.775 18.5172C12.5359 18.2828 12.1516 18.2828 11.9125 18.5219L8.67814 21.8031C8.62657 21.8594 8.5797 21.9203 8.55157 21.9953C8.51876 22.0703 8.5047 22.15 8.5047 22.2297C8.5047 22.3891 8.56564 22.5391 8.67814 22.6562L11.9125 25.9375C12.1469 26.1812 12.5313 26.1859 12.7703 25.9516Z" fill="#031A6E"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-[#222222] text-[16px] font-semibold">Transfered money to William</h1>
+          <p class="text-[#222222] opacity-[40%] text-[14px]">08:58 PM</p>
+        </div>
+      </div>     
+    </div>
+  </div>
+  </div>
+
   <script src="/dist/index.js"></script>
 </body>
 </html>
