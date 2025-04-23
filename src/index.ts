@@ -1,19 +1,21 @@
-import { hours, minutes, day, month, year } from "./time";
+import { hours, minutes } from "./time";
 import {
     timeElements, dateElements, wayToRegister, wayToLogin, registerPage, loginPage, registerForm, loginForm, accountBtns, homePage, accountPage,
     myCardBtns, myCardPage, homeBtns, logOut,
     notificationBtns,
-    notificationPage
+    notificationPage,
+    addCardElm,
+    cardModal,
+    cancelBtn,
+    cardForm
 } from "./elements";
 import { registered } from './register'
 import { logIned } from "./login";
+import { addCard } from "./cards";
 
 timeElements.forEach(elm => {
     elm.textContent = `${hours}:${minutes}`;
 })
-dateElements.forEach(date => {
-    date.textContent = `Today, ${day} ${month} ${year}`
-});
 
 wayToRegister.addEventListener('click', () => {
     registerPage.classList.remove('my-hidden')
@@ -60,8 +62,6 @@ homeBtns.forEach(homeBtn => {
         console.log('clicked')
     })
 });
-
-
 
 accountBtns.forEach(accountBtn => {
     accountBtn.addEventListener('click', () => {
@@ -122,3 +122,30 @@ notificationBtns.forEach(notificationBtn => {
 
 
 })
+
+addCardElm.addEventListener('click',()=>{
+    cardModal.classList.remove('hidden');
+})
+
+cancelBtn.addEventListener('click', () => {
+    cardModal.classList.add('hidden');
+});
+
+cardForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    const inputs = Array.from(cardForm.querySelectorAll('input'));
+    const [numberInput, dateInput, balanceInput] = inputs;
+    const cardData = {
+      number: +numberInput.value,
+      expiration: dateInput.value,
+      balance: parseFloat(balanceInput.value),
+    };
+
+    addCard(cardData.number, cardData.expiration, cardData.balance)
+  
+    console.log("Добавлена карта:", cardData);
+    cardModal.classList.add('hidden');
+    cardForm.reset();
+
+});
